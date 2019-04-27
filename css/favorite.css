@@ -1,0 +1,281 @@
+body {
+  background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@keyframes grade10 {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  5% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  30% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+.footer {
+    color: yellow;
+    text-align: center;
+
+}
+.header {
+  height: 15vh;
+
+}
+.menu a {
+	text-decoration: none;
+  color: orange;
+  height: 14vh;
+  position: relative;
+  float: left;
+
+}
+.footer {
+    color: yellow;
+    text-align: center;
+
+}
+.menu {
+  display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 30px;
+  line-height: : 10px;
+  margin: 0px;
+
+}
+
+#header {
+	padding: 2px;
+	transition: all .2s ease-out;
+	border: 2px orange solid;
+	color: orange;
+	text-align: center;
+	font-family: Impact;
+	border-radius: 6px;
+  position: relative;
+
+
+
+}
+#header:hover {
+  background-color: white;
+  color: black;
+  border: 2px black solid;
+  transform: scale(1.2);
+  transition: all .5s ease;
+}
+#logo {
+  text-indent: -999999px;
+  background-image: url(../images/poppy.jpg);
+  height: 120px;
+  width: 100px;
+  border-radius: 900px;
+  margin: 0 0 0px 80px;;
+  text-indent: -99999999px;
+  height: 14vh;
+    transition: all .5s ease;
+
+}
+#logo:hover {
+  transform: scale(1.3);
+  transition: all .5s ease;
+}
+.slideshow {
+  height: 83vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+	flex-direction: column;
+	justify-content: center;
+  border-radius: 15px;
+}
+
+.slide  {
+  background-position: top;
+  background-size: cover;
+  background-image: url(../images/zed.jpg);
+  background-repeat: no-repeat;
+  animation: grade10 20s linear infinite 0s;
+}
+.slide2 {
+  background-position: top;
+  background-size: cover;
+  background-image: url(../images/yasuo.jpg);
+  background-repeat: no-repeat;
+  animation: grade10 20s linear infinite 5s;
+}
+.slide3 {
+  background-position: top;
+  background-size: cover;
+  background-image: url(../images/evelyn.jpg);
+  animation: grade10 20s linear infinite 10s;
+}
+.slide4 {
+  background-position: top;
+  background-size: cover;
+  background-image: url(../images/dawn.jpg);
+  background-repeat: no-repeat;
+  animation: grade10 20s linear infinite 15s;
+}
+.slide {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity:0;
+}
+
+.roles {
+  height: 55vh;
+  margin-top: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap:5px;
+  margin-left: 100px;
+  margin-right: 100px;
+  box-shadow: 5px;
+}
+.roles1 {
+  height: 55vh;
+  margin-top: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap:5px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.top {
+  border: 2px black solid;
+  background-image: url(../images/zed1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  grid-column: 1/3;
+  text-align: center;
+  vertical-align: center;
+  border-radius: 30px;
+  transition: .all 5s ease-out;
+  height: 54vh;
+  text-decoration: none;
+  list-style: none;
+    transition: all .4s ease;
+}
+.top:hover {
+  border: 2px black solid;
+transition: all .2s ease-out;
+  font-size: 0;
+  transform: scale(1.1);
+  transition: all .5s ease;
+}
+
+.jungle{
+  border: 2px black solid;
+  background-image: url(../images/khazix.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  grid-column: 3/5;
+  height: 54vh;
+    transition: all .4s ease;
+    border-radius: 30px;
+
+}
+
+.jungle:hover {
+  border: 2px black solid;
+transition: all .2s ease-out;
+transform: scale(1.1);
+transition: all .5s ease;
+}
+.mid{
+  border: 2px black solid;
+  background-image: url(../images/yasuo2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  grid-column: 5/7;
+  height: 54vh;
+  transition: all .4s ease;
+  border-radius: 30px;
+
+}
+
+.mid:hover {
+  border: 2px black solid;
+transform: scale(1.1);
+transition: all .5s ease;
+
+}
+.bot{
+  border: 2px black solid;
+  background-image: url(../images/vayne.png );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  grid-column: 1/3;
+  height: 54vh;
+    transition: all .4s ease;
+    border-radius: 30px;
+
+}
+
+.bot:hover {
+  border: 2px black solid;
+transition: all .2s ease-out;
+transform: scale(1.1);
+transition: all .5s ease;
+}
+.support {
+  border: 2px black solid;
+  background-image: url(../images/malphite.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  grid-column: 3/5;
+  height: 54vh;
+    transition: all .4s ease;
+    border-radius: 30px;
+
+}
+
+.support:hover {
+  border: 2px black solid;
+transition: all .2s ease-out;
+transform: scale(1.1);
+
+}
+#credits {
+  text-align: center;
+  color: yellow;
+}
+h1 {
+  color: yellow;
+  text-align: center;
+  font-family: sans-serif;
+  background-image: url(../images/galaxy1.jpg);
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 600px;
+}
+#qwe {
+  text-decoration: none;
+  color: orange;
+  text-align: center;
+  opacity: 0;
+}
+#video3 {
+    position: fixed;
+     z-index: -1;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+  }
